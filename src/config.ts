@@ -5,9 +5,15 @@ interface IConfig {
     name: string;
     job: string;
     started: string;
-    stack: string;
+    currentStack: string;
     hobby: string;
     projectLink: string;
+  };
+  techStack: {
+    [name: string]: {
+      name: string;
+      icon: string;
+    };
   };
   socials: {
     [name: string]: string;
@@ -25,19 +31,29 @@ interface IConfig {
 
 export const Config: IConfig = {
   me: {
-    name: "John Doe",
+    name: "Mehdi Merkachi",
     job: "backend engineer",
-    started: "1970-01-01",
-    stack: "Scratch",
-    hobby: "gamble my life savings",
-    projectLink: "https://github.com/JohnDoe?tab=repositories",
+    started: "2022-09-01",
+    currentStack: "AdonisJS",
+    hobby: "Play football, snowboard and travel",
+    projectLink: "https://github.com/Mmehdi06?tab=repositories",
+  },
+  techStack: {
+    react: {
+      name: "React",
+      icon: "https://reactjs.org/favicon.ico",
+    },
+    node: {
+      name: "Node.js",
+      icon: "https://nodejs.org/static/images/favicons/favicon.ico",
+    },
   },
   socials: {
-    twitter: "https://twitter.com/JohnDoe",
-    github: "https://github.com/JohnDoe",
+    // twitter: "https://twitter.com/mehdimerkachi",
+    github: "https://github.com/Mmehdi06",
   },
   projects: {
-    "996.ICU": {
+    react: {
       url: "https://github.com/996icu/996.ICU",
       tags: ["ccp", "chinese", "overwork", "labor", "996"],
     },
@@ -47,6 +63,6 @@ export const Config: IConfig = {
     },
   },
   og: {
-    image: icon.src,
+    image: icon.src, // Make sure icon.src is properly defined elsewhere in your code
   },
 };

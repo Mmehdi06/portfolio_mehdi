@@ -35,7 +35,7 @@ const posts = (await getCollection("posts")).sort(function (
               experience. I am currently working with<strong
                 class="font-normal text-primary"
               >
-                {Config.me.stack}</strong
+                {Config.me.currentStack}</strong
               >. Outside of programming I like to {Config.me.hobby}.
             </h2>
             <div class="custom-breadcrumbs">
@@ -71,6 +71,19 @@ const posts = (await getCollection("posts")).sort(function (
             </div>
           </div>
         </div>
+      </article>
+
+      <article>
+        <header class="flex w-full flex-row justify-between gap-2">
+          <h3 class="text-lg">Skills</h3>
+        </header>
+        <section class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+          {
+            Object.keys(Config.techStack).map((skill) => (
+              skill
+            ))
+          }
+        </section>
       </article>
 
       <article class="flex flex-col gap-8">
