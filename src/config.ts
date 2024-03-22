@@ -49,118 +49,118 @@ export const Config: IConfig = {
     Languages: {
       java: {
         name: "Java",
-        icon: "/src/assets/icons/java.svg",
+        icon: "/icons/java.svg",
         url: "https://www.java.com/",
       },
       cSharp: {
         name: "C#",
-        icon: "/src/assets/icons/csharp.svg",
+        icon: "/icons/csharp.svg",
         url: "https://docs.microsoft.com/en-us/dotnet/csharp/",
       },
       javascript: {
         name: "Javascript",
-        icon: "/src/assets/icons/javascript.svg",
+        icon: "/icons/javascript.svg",
         url: "https://w3schools.com/js/",
       },
       typescript: {
         name: "TypeScript",
-        icon: "/src/assets/icons/typescript.svg",
+        icon: "/icons/typescript.svg",
         url: "https://www.typescriptlang.org/",
       },
       python: {
         name: "Python",
-        icon: "/src/assets/icons/python.svg",
+        icon: "/icons/python.svg",
         url: "https://www.python.org/",
       },
       php: {
         name: "PHP",
-        icon: "/src/assets/icons/php.svg",
+        icon: "/icons/php.svg",
         url: "https://www.php.net/",
       },
       html: {
         name: "HTML",
-        icon: "/src/assets/icons/html.svg",
+        icon: "/icons/html.svg",
         url: "https://developer.mozilla.org/en-US/docs/Web/HTML",
       },
       css: {
         name: "CSS",
-        icon: "/src/assets/icons/css.svg",
+        icon: "/icons/css.svg",
         url: "https://developer.mozilla.org/en-US/docs/Web/CSS",
       },
     },
     Frontend: {
       react: {
         name: "React",
-        icon: "/src/assets/icons/react.svg",
+        icon: "/icons/react.svg",
         url: "https://reactjs.org/",
       },
       solidjs: {
         name: "SolidJS",
-        icon: "/src/assets/icons/solidjs.svg",
+        icon: "/icons/solidjs.svg",
         url: "https://solidjs.com/",
       },
       astro: {
         name: "Astro",
-        icon: "/src/assets/icons/astro.svg",
+        icon: "/icons/astro.svg",
         url: "https://astro.build/",
       },
     },
     Backend: {
       nodejs: {
         name: "Node.js",
-        icon: "/src/assets/icons/nodejs.svg",
+        icon: "/icons/nodejs.svg",
         url: "https://nodejs.org/",
       },
       laravel: {
         name: "Laravel",
-        icon: "/src/assets/icons/laravel.svg",
+        icon: "/icons/laravel.svg",
         url: "https://laravel.com/",
       },
       adonisjs: {
         name: "AdonisJS",
-        icon: "/src/assets/icons/adonisjs.svg",
+        icon: "/icons/adonisjs.svg",
         url: "https://adonisjs.com/",
       },
       dotnet: {
         name: ".NET",
-        icon: "/src/assets/icons/dotnet.svg",
+        icon: "/icons/dotnet.svg",
         url: "https://dotnet.microsoft.com/",
       },
       springBoot: {
         name: "Spring Boot",
-        icon: "/src/assets/icons/springboot.svg",
+        icon: "/icons/springboot.svg",
         url: "https://spring.io/projects/spring-boot",
       },
     },
     Extras: {
       tailwindcss: {
         name: "TailwindCSS",
-        icon: "/src/assets/icons/tailwindcss.svg",
+        icon: "/icons/tailwindcss.svg",
         url: "https://tailwindcss.com/",
       },
       git: {
         name: "Git",
-        icon: "/src/assets/icons/git.svg",
+        icon: "/icons/git.svg",
         url: "https://git-scm.com/",
       },
       docker: {
         name: "Docker",
-        icon: "/src/assets/icons/docker.svg",
+        icon: "/icons/docker.svg",
         url: "https://www.docker.com/",
       },
       linux: {
         name: "Linux",
-        icon: "/src/assets/icons/linux.svg",
+        icon: "/icons/linux.svg",
         url: "https://www.linux.org/",
       },
       rabbitmq: {
         name: "RabbitMQ",
-        icon: "/src/assets/icons/rabbitmq.svg",
+        icon: "/icons/rabbitmq.svg",
         url: "https://www.rabbitmq.com/",
       },
       redis: {
         name: "Redis",
-        icon: "/src/assets/icons/redis.svg",
+        icon: "/icons/redis.svg",
         url: "https://redis.io/",
       },
     },
@@ -170,12 +170,12 @@ export const Config: IConfig = {
     githubObject: {
       name: "GitHub",
       url: "https://github.com/Mmehdi06",
-      icon: "/src/assets/icons/github.svg",
+      icon: "/icons/github.svg",
     },
     linkedinObject: {
       name: "LinkedIn",
       url: "https://linkedin.com/in/mehdimerkachi",
-      icon: "/src/assets/icons/linkedin.svg",
+      icon: "/icons/linkedin.svg",
     },
   },
   projects: {
