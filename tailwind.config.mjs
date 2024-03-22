@@ -1,3 +1,5 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
@@ -5,6 +7,9 @@ export default {
     extend: {
       colors: {
         "paper-color": "#f6eee3",
+      },
+      fontFamily: {
+        sans: ["IBMPlexMono", ...defaultTheme.fontFamily.sans],
       },
     },
   },

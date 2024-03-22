@@ -1,7 +1,7 @@
 ---
 import { ViewTransitions } from "astro:transitions";
 import { Config } from "../config";
-import icon from "../assets/icon.png";
+import icon from "../assets/FAVICO.png";
 
 interface Props {
   title?: string;
@@ -37,6 +37,7 @@ const currentPath = Astro.url.pathname;
     <meta property="og:type" content={og_type} />
     <meta property="og:image" content={og_image} />
     <meta property="og:url" content={Astro.request.url} />
+  
     <ViewTransitions />
   </head>
   <body>
@@ -66,6 +67,21 @@ const currentPath = Astro.url.pathname;
       <slot />
     </div>
     <style is:global>
+
+        @font-face {
+  font-family: "IBMPlexMono";
+  src: url("/fonts/IBMPlexMono-Medium.ttf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "IBMPlexMono";
+  src: url("/fonts/IBMPlexMono-Bold.ttf") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
       .custom-breadcrumbs {
         max-width: 100%;
         overflow-x: auto;
