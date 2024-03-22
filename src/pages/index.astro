@@ -41,31 +41,32 @@ const posts = (await getCollection("posts")).sort(function (
               >. Outside of programming I like to {Config.me.hobby}.
             </h2>
             <div class="custom-breadcrumbs">
-              <ul>
-                {
-                  Object.keys(Config.socials).map((social) => (
-                    <li>
-                      <a
-                        href={
-                          Config.socials[social as keyof typeof Config.socials]
-                        }
-                        rel="noreferrer"
-                        target="_blank"
-                      >
-                      <div class="flex flex-row items-center gap-2" 
-                        >
-                        {social === "linkedin" ? (
-                          <img src="/src/assets/icons/linkedinIcon.svg" alt="" width="25" height="25">
-                        ) : <img src="/src/assets/icons/githubIcon.svg" alt="" width="25" height="25">}
-                          {social.charAt(0).toUpperCase() + social.slice(1)}
-                        
-                      </div>
-                      </a>
-                    </li>
-                  ))
-                }
-              </ul>
+  <ul>
+    {Object.keys(Config.socials).map((social) => {
+      const socialObject = Config.socials[social];
+      return (
+        <li>
+          <a
+            href={socialObject.url}
+            rel="noreferrer"
+            target="_blank"
+          >
+            <div class="flex flex-row items-center gap-2">
+              <img
+                src={socialObject.icon}
+                alt={socialObject.name}
+                width="25"
+                height="25"
+              />
+              {socialObject.name}
             </div>
+          </a>
+        </li>
+      );
+    })}
+  </ul>
+</div>
+
           </div>
           <div class="ml-auto hidden sm:block">
             <div class="avatar">
