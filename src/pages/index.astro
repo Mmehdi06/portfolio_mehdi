@@ -50,7 +50,14 @@ const posts = (await getCollection("posts")).sort(function (
                         rel="noreferrer"
                         target="_blank"
                       >
-                        {social.charAt(0).toUpperCase() + social.slice(1)}
+                      <div class="flex flex-row items-center gap-2" 
+                        >
+                        {social === "linkedin" ? (
+                          <img src="/src/assets/icons/linkedinIcon.svg" alt="" width="25" height="25">
+                        ) : <img src="/src/assets/icons/githubIcon.svg" alt="" width="25" height="25">}
+                          {social.charAt(0).toUpperCase() + social.slice(1)}
+                        
+                      </div>
                       </a>
                     </li>
                   ))
@@ -80,7 +87,7 @@ const posts = (await getCollection("posts")).sort(function (
         <section class="grid grid-cols-1 gap-4 sm:grid-cols-2">
           {
             Object.keys(Config.techStack).map((skill) => (
-              skill
+              
             ))
           }
         </section>

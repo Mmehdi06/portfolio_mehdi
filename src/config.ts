@@ -51,6 +51,7 @@ export const Config: IConfig = {
   socials: {
     // twitter: "https://twitter.com/mehdimerkachi",
     github: "https://github.com/Mmehdi06",
+    linkedin: "https://linkedin.com/in/mehdimerkachi",
   },
   projects: {
     react: {
