@@ -1,4 +1,4 @@
-import icon from "../src/assets/FAVICO.png";
+import icon from "/favicon.ico";
 
 interface IConfig {
   me: {
@@ -185,6 +185,6 @@ export const Config: IConfig = {
     },
   },
   og: {
-    image: icon.src, // Make sure icon.src is properly defined elsewhere in your code
+    image: icon, // Path to the favicon
   },
 };
