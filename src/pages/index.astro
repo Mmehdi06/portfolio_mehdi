@@ -6,6 +6,7 @@ import { Picture } from "astro:assets";
 import iconImage from "@assets/MEMOJI.png";
 import { Config } from "../config";
 
+
 const years = () => {
   const start = new Date(Config.me.started);
   const now = new Date();
@@ -30,14 +31,14 @@ const posts = (await getCollection("posts")).sort(function (
           <div class="col-span-2 flex flex-col gap-6 md:gap-8 my-auto">
             <h1 class="text-3xl">Hi, I’m {Config.me.name.split(" ")[0]}</h1>
             <h2 class="w-auto sm:w-[85%] md:w-[90%] leading-6">
-              I am a <strong class="font-normal text-primary"
+              I am a <strong class="font-normal underline decoration-wavy text-primary"
                 >{Config.me.job}</strong
               > with over
               <strong class="font-normal text-primary">{years} years</strong> of
-              experience. I am currently working with<strong
-                class="font-normal text-primary"
+              experience. I am currently experiencing with <strong
+                class="font-normal underline decoration-dashed text-primary"
               >
-                {Config.me.currentStack}</strong
+              {Config.me.currentStack}</strong
               >. Outside of programming I like to <span class="text-orange-500">{Config.me.hobby}</span>.
             </h2>
             <div class="custom-breadcrumbs">
@@ -85,7 +86,7 @@ const posts = (await getCollection("posts")).sort(function (
 
       <article class="flex flex-col gap-8">
         <header class="flex w-full flex-row justify-between gap-2">
-          <h3 class="text-lg">Technical Skills</h3>
+          <h3 class="text-lg font-bold">Technical Skills</h3>
           
         </header>
         <section class="grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -97,7 +98,7 @@ const posts = (await getCollection("posts")).sort(function (
 
       <article class="flex flex-col gap-8">
         <header class="flex w-full flex-row justify-between gap-2">
-          <h3 class="text-lg">Featured projects</h3>
+          <h3 class="text-lg font-bold">Featured projects</h3>
           <a
             href={Config.me.projectLink}
             class="text-sm text-primary underline decoration-dashed underline-offset-8"

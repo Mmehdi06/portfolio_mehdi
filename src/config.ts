@@ -179,9 +179,13 @@ export const Config: IConfig = {
     },
   },
   projects: {
-    "This Website": {
+    "My Portfolio - This Website": {
       url: "https://github.com/Mmehdi06/portfolio_mehdi",
       tags: ["Astro", "TypeScript", "TailwindCSS"],
+    },
+    "Raycast Extension - Single Focus": {
+      url: "https://www.raycast.com/Mmehdi06/single-focus",
+      tags: ["Raycast-API", "TypeScript", "JSX"],
     },
   },
   og: {

@@ -32,7 +32,7 @@ const currentPath = Astro.url.pathname;
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="stylesheet" href="/app.css" />
+
 
     <link
       rel="preload"
@@ -93,6 +93,33 @@ const currentPath = Astro.url.pathname;
       <slot />
     </div>
     <style is:global>
+      @font-face {
+        font-family: "IBM Plex Mono";
+        src: url("/fonts/IBMPlexMono-Regular.ttf") format("ttf");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "IBM Plex Mono";
+        src: url("/fonts/IBMPlexMono-Medium.ttf") format("ttf");
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "IBM Plex Mono";
+        src: url("/fonts/IBMPlexMono-Bold.ttf") format("ttf");
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      :root{
+        font-family: "IBM Plex Mono", monospace;
+      }
       .custom-breadcrumbs {
         max-width: 100%;
         overflow-x: auto;
