@@ -13,7 +13,7 @@ const { title, publishedAt, description, href, tags } = Astro.props;
 <a
   href={href}
   target={href.startsWith("http") ? "_blank" : "_self"}
-  class="group flex cursor-pointer flex-col gap-2 rounded-md border border-neutral p-4 transition-all duration-300 hover:-translate-y-1.5"
+  class="group flex cursor-pointer flex-col justify-between gap-2 rounded-md border border-neutral p-4 transition-all duration-300 hover:-translate-y-1.5"
   data-astro-prefetch
 >
   <div class="flex w-full justify-between gap-3 flex-row items-start">
