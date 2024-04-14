@@ -31,15 +31,15 @@ const posts = (await getCollection("posts")).sort(function (
           <div class="col-span-2 flex flex-col gap-6 md:gap-8 my-auto">
             <h1 class="text-3xl">Hi, I’m {Config.me.name.split(" ")[0]}</h1>
             <h2 class="w-auto sm:w-[85%] md:w-[90%] leading-6">
-              I am a <strong class="font-normal underline decoration-wavy text-primary"
+              I am a <strong class="font-normal underline decoration-wavy text-accent"
                 >{Config.me.job}</strong
               > with over
-              <strong class="font-normal text-primary">{years} years</strong> of
+              <strong class="font-normal text-accent">{years} years</strong> of
               experience. I am currently experiencing with <strong
-                class="font-normal underline decoration-dashed text-primary"
+                class="font-normal underline decoration-dashed text-accent"
               >
               {Config.me.currentStack}</strong
-              >. Outside of programming I like to <span class="text-orange-500">{Config.me.hobby}</span>.
+              >. Outside of programming I like to <span class="text-indigo-500">{Config.me.hobby}</span>.
             </h2>
             <div class="custom-breadcrumbs">
   <ul>
@@ -101,7 +101,7 @@ const posts = (await getCollection("posts")).sort(function (
           <h3 class="text-lg font-bold">Featured projects</h3>
           <a
             href={Config.me.projectLink}
-            class="text-sm text-primary underline decoration-dashed underline-offset-8"
+            class="text-sm text-secondary-content underline decoration-dashed underline-offset-8"
             target="_self"
             rel="noreferrer"
             >See all projects

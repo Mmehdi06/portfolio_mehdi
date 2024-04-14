@@ -185,7 +185,7 @@ export const Config: IConfig = {
     },
     "Raycast Extension - Single Focus": {
       url: "https://www.raycast.com/Mmehdi06/single-focus",
-      tags: ["Raycast-API", "TypeScript", "JSX"],
+      tags: ["Raycast-API", "TSX", "Swift"],
     },
   },
   og: {

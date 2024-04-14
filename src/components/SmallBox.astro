@@ -50,7 +50,7 @@ const { title, publishedAt, description, href, tags } = Astro.props;
     tags ? (
       <div class="pt-1 flex flex-row flex-wrap gap-2">
         {tags.map((item) => (
-          <div class="badge badge-neutral">{item}</div>
+          <div class="badge badge-neutral hover:badge-accent">{item}</div>
         ))}
       </div>
     ) : (
