@@ -41,5 +41,22 @@ The application is now running at http://localhost:5000.
 ## Deployment
 
 The project is deployed on [Fly.io](https://fly.io/). Fly.io is a powerful platform for application hosting that provides a global deployment pipeline with an intuitive user interface.
+
+### Steps for Deployment
+
+Your Portfolio's deployment is automated using continuous integration. Here's an overview of how it's set up:
+
+1. **GitHub**: The main codebase is hosted in a GitHub repository.
+
+2. **GitHub Actions (CI/CD)**: GitHub Actions has been set to automate the testing and deployment process. Upon each new push to the main branch, it will invoke the necessary steps for building the Astro application and then deploying it to Fly.io.
+
+See `.github/workflows/fly.yml` for more information on the CI/CD setup.
+
+3. **Fly.io**: After successful build, the built assets are deployed to Fly.io. 
+
 You can view the live version of the site [here](https://mehdi-merkachi.dev).
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
