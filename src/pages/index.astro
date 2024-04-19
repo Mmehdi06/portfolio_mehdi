@@ -14,6 +14,7 @@ const years = () => {
 };
 
 import { getCollection } from "astro:content";
+import RaycastButton from "@components/RaycastButton.astro";
 
 const posts = (await getCollection("posts")).sort(function (
   first: any,
@@ -41,7 +42,7 @@ const posts = (await getCollection("posts")).sort(function (
               {Config.me.currentStack}</strong
               >. Outside of programming I like to <span class="text-indigo-500">{Config.me.hobby}</span>.
             </h2>
-            <div class="custom-breadcrumbs">
+            <div class="custom-breadcrumbs flex flex-col gap-6 justify-center items-start">
   <ul>
     {Object.keys(Config.socials).map((social) => {
       const socialObject = Config.socials[social];
@@ -65,7 +66,11 @@ const posts = (await getCollection("posts")).sort(function (
         </li>
       );
     })}
+
+
   </ul>
+        <RaycastButton />
+
 </div>
 
           </div>
@@ -79,9 +84,15 @@ const posts = (await getCollection("posts")).sort(function (
                   loading="eager"
                 />
               </div>
+              
             </div>
+            
+                            
+
           </div>
+          
         </div>
+        
       </article>
 
       <article class="flex flex-col gap-8">
