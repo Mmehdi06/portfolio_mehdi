@@ -36,11 +36,21 @@ const posts = (await getCollection("posts")).sort(function (
               > with over
               <strong class="font-normal text-accent">{years} years</strong> of
               experience. I am currently experiencing with <strong
-                class="font-normal underline decoration-dashed text-accent"
+                class="font-normal text-accent"
               >
               {Config.me.currentStack}</strong
               >. Outside of programming I like to <span class="text-indigo-500">{Config.me.hobby}</span>.
             </h2>
+            <div>
+              <a
+                href={Config.me.resumeUrl}
+                class=" font-medium text-lg text-primary hover:text-accent underline decoration-dashed underline-offset-8"
+                target="_blank"
+                rel="noreferrer"
+                download
+                >Download my resume
+              </a>
+            </div>
             <div class="custom-breadcrumbs">
   <ul>
     {Object.keys(Config.socials).map((social) => {

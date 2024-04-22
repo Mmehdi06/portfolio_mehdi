@@ -8,6 +8,7 @@ interface IConfig {
     currentStack: string;
     hobby: string;
     projectLink: string;
+    resumeUrl?: string;
   };
   techStack: {
     [name: string]: {
@@ -44,6 +45,7 @@ export const Config: IConfig = {
     currentStack: "AdonisJS",
     hobby: "Play Football, Snowboard and Travel",
     projectLink: "https://github.com/Mmehdi06?tab=repositories",
+    resumeUrl: "/resume/Mehdi_Merkachi_Resume.pdf",
   },
   techStack: {
     Languages: {
