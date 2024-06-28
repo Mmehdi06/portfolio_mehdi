@@ -40,9 +40,9 @@ interface IConfig {
 export const Config: IConfig = {
   me: {
     name: "Mehdi Merkachi",
-    job: "Backend Engineer",
+    job: "FullStack Engineer",
     started: "2022-09-01",
-    currentStack: "AdonisJS",
+    currentStack: "DevOps",
     hobby: "Play Football, Snowboard and Travel",
     projectLink: "https://github.com/Mmehdi06?tab=repositories",
     resumeUrl: "/resume/Mehdi_Merkachi_Resume.pdf",
