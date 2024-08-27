@@ -54,11 +54,11 @@ export const Config: IConfig = {
         icon: "/icons/java.svg",
         url: "https://www.java.com/",
       },
-      cSharp: {
-        name: "C#",
-        icon: "/icons/csharp.svg",
-        url: "https://docs.microsoft.com/en-us/dotnet/csharp/",
-      },
+      // cSharp: {
+      //   name: "C#",
+      //   icon: "/icons/csharp.svg",
+      //   url: "https://docs.microsoft.com/en-us/dotnet/csharp/",
+      // },
       javascript: {
         name: "Javascript",
         icon: "/icons/javascript.svg",
@@ -69,26 +69,26 @@ export const Config: IConfig = {
         icon: "/icons/typescript.svg",
         url: "https://www.typescriptlang.org/",
       },
-      python: {
-        name: "Python",
-        icon: "/icons/python.svg",
-        url: "https://www.python.org/",
-      },
+      // python: {
+      //   name: "Python",
+      //   icon: "/icons/python.svg",
+      //   url: "https://www.python.org/",
+      // },
       php: {
         name: "PHP",
         icon: "/icons/php.svg",
         url: "https://www.php.net/",
       },
-      html: {
-        name: "HTML",
-        icon: "/icons/html.svg",
-        url: "https://developer.mozilla.org/en-US/docs/Web/HTML",
-      },
-      css: {
-        name: "CSS",
-        icon: "/icons/css.svg",
-        url: "https://developer.mozilla.org/en-US/docs/Web/CSS",
-      },
+      // html: {
+      //   name: "HTML",
+      //   icon: "/icons/html.svg",
+      //   url: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+      // },
+      // css: {
+      //   name: "CSS",
+      //   icon: "/icons/css.svg",
+      //   url: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+      // },
     },
     Frontend: {
       react: {
@@ -118,16 +118,16 @@ export const Config: IConfig = {
         icon: "/icons/laravel.svg",
         url: "https://laravel.com/",
       },
-      adonisjs: {
-        name: "AdonisJS",
-        icon: "/icons/adonisjs.svg",
-        url: "https://adonisjs.com/",
-      },
-      dotnet: {
-        name: ".NET",
-        icon: "/icons/dotnet.svg",
-        url: "https://dotnet.microsoft.com/",
-      },
+      // adonisjs: {
+      //   name: "AdonisJS",
+      //   icon: "/icons/adonisjs.svg",
+      //   url: "https://adonisjs.com/",
+      // },
+      // dotnet: {
+      //   name: ".NET",
+      //   icon: "/icons/dotnet.svg",
+      //   url: "https://dotnet.microsoft.com/",
+      // },
       springBoot: {
         name: "Spring Boot",
         icon: "/icons/springboot.svg",
@@ -135,11 +135,11 @@ export const Config: IConfig = {
       },
     },
     Extras: {
-      tailwindcss: {
-        name: "TailwindCSS",
-        icon: "/icons/tailwindcss.svg",
-        url: "https://tailwindcss.com/",
-      },
+      // tailwindcss: {
+      //   name: "TailwindCSS",
+      //   icon: "/icons/tailwindcss.svg",
+      //   url: "https://tailwindcss.com/",
+      // },
       git: {
         name: "Git",
         icon: "/icons/git.svg",
@@ -150,11 +150,11 @@ export const Config: IConfig = {
         icon: "/icons/docker.svg",
         url: "https://www.docker.com/",
       },
-      linux: {
-        name: "Linux",
-        icon: "/icons/linux.svg",
-        url: "https://www.linux.org/",
-      },
+      // linux: {
+      //   name: "Linux",
+      //   icon: "/icons/linux.svg",
+      //   url: "https://www.linux.org/",
+      // },
       rabbitmq: {
         name: "RabbitMQ",
         icon: "/icons/rabbitmq.svg",
