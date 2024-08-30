@@ -35,12 +35,10 @@ const posts = (await getCollection("posts")).sort(function (
                 >{Config.me.job}</strong
               > with over
               <strong class="font-normal text-accent">{years} years</strong> of
-              experience. I am currently getting deeper into <strong
               experience. I am currently delving deeper into <strong
                 class="font-normal text-accent"
               >
               {Config.me.currentStack}</strong
-              >. Outside of programming I like to <span class="text-indigo-500">{Config.me.hobby}</span>.
               >. Outside of programming I enjoy <span class="text-indigo-500">{Config.me.hobby}</span>.
             </h2>
             <div>
@@ -138,7 +136,6 @@ const posts = (await getCollection("posts")).sort(function (
         </section>
       </article>
 
-      <!-- 
       <article class="flex flex-col gap-8">
         <header class="flex w-full flex-row justify-between gap-2">
           <h3 class="text-lg">Latest posts</h3>
@@ -166,7 +163,7 @@ const posts = (await getCollection("posts")).sort(function (
           }
         </section>
       </article>
-      -->
+
     </div>
   </main>
 </Layout>
