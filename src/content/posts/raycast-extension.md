@@ -1,29 +1,25 @@
 ---
 title: Raycast extension
 tags: ["raycast", "extension", "raycast extension"]
-image: /post-images/raycast-extensions/cover.png
+cover: ../../assets/post-images/raycast-extensions/cover.png
 description: How I use Raycast on a daily basis
 publishedAt: 2024-09-10
 ---
 
 ## **What is a Launcher and Why Do I Need It?**
 
-In the fast-paced digital world, **efficiency is key**. As someone who spends a significant amount of time on a Mac, I’ve always been on the lookout for tools that streamline my workflow and reduce friction. This is where **launchers** come into play. A launcher is essentially a command bar that allows you to quickly access apps, files, and perform various tasks using just your keyboard. Think of it as a powerful, customizable version of Spotlight, but with far more capabilities.
+In the fast-paced digital world, **efficiency is key**. As someone who spends a significant amount of time on a Mac and who is always looking to optimize my workflow, I’ve always been on the lookout for tools that streamline my workflow and reduce friction. This is where **launchers** come into play. A launcher is essentially a command bar that allows you to quickly access apps, files, and perform various tasks using just your keyboard. Think of it as a powerful, customizable version of Spotlight, but with far more capabilities.
 
 **Raycast**, in particular, is a modern take on the classic launcher concept, much like Alfred but with a more contemporary twist. While Alfred has been a go-to for many, Raycast brings a fresh perspective, blending sleek design with powerful features that make it an **indispensable tool** for anyone looking to enhance their productivity.
-![Raycast](/post-images/raycast-extensions/onboarding.png)
+![Raycast](../../assets/post-images/raycast-extensions/onboarding.png)
 
 ## **The Main Features of Raycast**
 
-Raycast offers a range of features that are incredibly useful, and the best part is that many of these are available for free. Here are some of the key functionalities that have made a significant impact on my workflow:
+Raycast offers a range of features that are incredibly useful, and the best part is that many of these are available for free. Here are some of the key functionalities that this tool has to offer to newcomers.
 
-- **Snippets**: One of the features I use most frequently is Snippets. This allows me to store and quickly insert blocks of text, code, or any frequently used phrases. It’s a lifesaver when you need to automate repetitive typing tasks.
-  ![Snippets](/post-images/raycast-extensions/snippets.png)
-- **Window Management**: Managing multiple windows across different spaces can be chaotic, but Raycast simplifies this with its window management feature. It allows me to easily move, resize, and organize my windows, helping me stay focused and organized.
+- **Snippets**: One of the features I rely on most frequently is Snippets. This functionality enables me to conveniently store and swiftly insert blocks of text, code, or commonly used phrases. It proves invaluable for streamlining repetitive typing tasks. Primarily, I leverage it for managing various email addresses across work, school, and the ubiquitous spam account. By employing shortcuts like '!spam' or even incorporating my prettierrc configuration as a snippet, I enhance efficiency and streamline my workflow seamlessly. ![Snippets](../../assets/post-images/raycast-extensions/snippets.png)
 
-- **Floating Notes**: This feature has become a go-to for jotting down quick ideas or to-do lists. It’s like having sticky notes on your desktop, but more integrated and less cluttered. The notes can float above your active windows, so they’re always within reach.
-
-These features alone would make Raycast a strong contender in the world of productivity tools, but it doesn’t stop there.
+- **Clipboard History**: Raycast's clipboard history feature is a game-changer, offering users a seamless way to access a wide variety of previously copied items, including text within images. In the Pro tier, users enjoy unlimited history storage, ensuring easy retrieval of any copied content. However, the Free tier provides ample clipboard history storage for most users. Let's face it, how often do we really need to revisit something we copied over a week ago? These features alone would make Raycast a strong contender in the world of productivity tools, but it doesn’t stop there. ![Clipboard history](../../assets/post-images/raycast-extensions/clipboard.png)
 
 ## **The Raycast Store and Community Extensions**
 
@@ -36,7 +32,7 @@ For example:
 
 - **Notion Integration**: For those who live in Notion, this extension makes it easy to search and navigate your workspace.
 
-![Store picture](/post-images/raycast-extensions/store.png)
+![Store picture](../../assets/post-images/raycast-extensions/store.png)
 
 The store is constantly growing, with new extensions being added regularly. Whether you need a tool for project management, code review, or even just a weather forecast, chances are there’s an extension for it. This level of community involvement not only enhances the versatility of Raycast but also ensures that the tool evolves in line with user needs.
 

@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import Layout from "../../layouts/Layout.astro";
 import { getCollection, type CollectionEntry } from "astro:content";
 
@@ -17,17 +18,16 @@ const { post } = Astro.props;
 const { Content } = await post.render();
 ---
 
-<Layout
-  title={post.data.title}
-  description={post.data.description}
-  og_title={post.data.title}
-  og_image={post.data.image}
-  og_description={post.data.description}
-  og_type="article"
->
+<Layout>
   <article class="prose mx-auto flex w-full max-w-prose flex-col gap-4">
-   <div class="  rounded-xl flex w-full justify-center">
-      <img src={post.data.image} alt={post.data.title} class=" w-44 h-44 object-cover rounded-xl" />
+    <div class="rounded-xl flex w-full justify-center">
+      <Image
+        src={post.data.cover}
+        alt={post.data.title}
+        width={1080}
+        height={1080}
+        class="rounded-xl"
+      />
     </div>
     <h1 class="mb-0">
       {post.data.title}

@@ -1,11 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import FloatingBox from "@components/SmallBox.astro";
+import ProjectBox from "@components/ProjectBox.astro";
 import SkillBox from "@components/SkillBox.astro";
 import { Picture } from "astro:assets";
 import iconImage from "@assets/MEMOJI.png";
 import { Config } from "../config";
-
 
 const years = () => {
   const start = new Date(Config.me.started);
@@ -14,10 +13,11 @@ const years = () => {
 };
 
 import { getCollection } from "astro:content";
+import PostLinkBox from "@components/PostLinkBox.astro";
 
 const posts = (await getCollection("posts")).sort(function (
   first: any,
-  second: any
+  second: any,
 ) {
   return second.data.publishedAt.getTime() - first.data.publishedAt.getTime();
 });
@@ -31,20 +31,23 @@ const posts = (await getCollection("posts")).sort(function (
           <div class="col-span-2 flex flex-col gap-6 md:gap-8 my-auto">
             <h1 class="text-3xl">Hi, I’m {Config.me.name.split(" ")[0]}</h1>
             <h2 class="w-auto sm:w-[85%] md:w-[90%] leading-6">
-              I am a <strong class="font-normal underline decoration-wavy text-accent"
+              I am a <strong
+                class="font-normal underline decoration-wavy text-accent"
                 >{Config.me.job}</strong
               > with over
-              <strong class="font-normal text-accent">{years} years</strong> of
-              experience. I am currently delving deeper into <strong
+              <strong class="font-normal text-accent">{years} years</strong> of experience.
+              I am currently delving deeper into <strong
                 class="font-normal text-accent"
               >
-              {Config.me.currentStack}</strong
-              >. Outside of programming I enjoy <span class="text-indigo-500">{Config.me.hobby}</span>.
+                {Config.me.currentStack}</strong
+              >. Outside of programming I enjoy <span class="text-indigo-500"
+                >{Config.me.hobby}</span
+              >.
             </h2>
             <div>
               <a
                 href={Config.me.resumeUrl}
-                class=" font-medium text-lg text-primary hover:text-accent underline decoration-dashed underline-offset-8"
+                class="font-medium text-lg text-primary hover:text-accent underline decoration-dashed underline-offset-8"
                 target="_blank"
                 rel="noreferrer"
                 download
@@ -52,32 +55,33 @@ const posts = (await getCollection("posts")).sort(function (
               </a>
             </div>
             <div class="custom-breadcrumbs">
-  <ul>
-    {Object.keys(Config.socials).map((social) => {
-      const socialObject = Config.socials[social];
-      return (
-        <li>
-          <a
-            href={socialObject.url}
-            rel="noreferrer"
-            target="_blank"
-          >
-            <div class="flex flex-row items-center gap-2">
-              <img
-                src={socialObject.icon}
-                alt={socialObject.name}
-                width="25"
-                height="25"
-              />
-              {socialObject.name}
+              <ul>
+                {
+                  Object.keys(Config.socials).map((social) => {
+                    const socialObject = Config.socials[social];
+                    return (
+                      <li>
+                        <a
+                          href={socialObject.url}
+                          rel="noreferrer"
+                          target="_blank"
+                        >
+                          <div class="flex flex-row items-center gap-2">
+                            <img
+                              src={socialObject.icon}
+                              alt={socialObject.name}
+                              width="25"
+                              height="25"
+                            />
+                            {socialObject.name}
+                          </div>
+                        </a>
+                      </li>
+                    );
+                  })
+                }
+              </ul>
             </div>
-          </a>
-        </li>
-      );
-    })}
-  </ul>
-</div>
-
           </div>
           <div class="ml-auto hidden sm:block">
             <div class="avatar">
@@ -97,12 +101,16 @@ const posts = (await getCollection("posts")).sort(function (
       <article class="flex flex-col gap-8">
         <header class="flex w-full flex-row justify-between gap-2">
           <h3 class="text-lg font-bold">Technical Skills</h3>
-          
         </header>
         <section class="grid grid-cols-1 gap-4 sm:grid-cols-2">
-          {Object.keys(Config.techStack).map((category) => (
-            <SkillBox title={category} frameworks={Config.techStack[category]} />
-          ))}
+          {
+            Object.keys(Config.techStack).map((category) => (
+              <SkillBox
+                title={category}
+                frameworks={Config.techStack[category]}
+              />
+            ))
+          }
         </section>
       </article>
 
@@ -122,10 +130,13 @@ const posts = (await getCollection("posts")).sort(function (
         >
           {
             Object.keys(Config.projects).map((project) => (
-              <FloatingBox
+              <ProjectBox
                 title={project}
-                href={
+                url={
                   Config.projects[project as keyof typeof Config.projects].url
+                }
+                repo={
+                  Config.projects[project as keyof typeof Config.projects].repo
                 }
                 tags={
                   Config.projects[project as keyof typeof Config.projects].tags
@@ -136,34 +147,33 @@ const posts = (await getCollection("posts")).sort(function (
         </section>
       </article>
 
-      <article class="flex flex-col gap-8">
-        <header class="flex w-full flex-row justify-between gap-2">
-          <h3 class="text-lg">Latest posts</h3>
-          <a
-            href="/posts"
-            class="text-sm text-primary underline decoration-dashed underline-offset-8"
-            rel="noreferrer"
-            >See all posts
-          </a>
-        </header>
-        <section class="grid grid-cols-1 gap-4 sm:grid-cols-2 mx-auto">
-          {
-            posts.map((post: any) => (
-              <FloatingBox
-                title={post.data.title}
-                publishedAt={post.data.publishedAt.toLocaleDateString("en-us", {
-                  year: "numeric",
-                  month: "short",
-                  day: "numeric",
-                })}
-                description={post.data.description}
-                href={"/posts/" + post.slug}
-              />
-            ))
-          }
-        </section>
-      </article>
-
+      <!-- <article class="flex flex-col gap-8"> -->
+      <!--   <header class="flex w-full flex-row justify-between gap-2"> -->
+      <!--     <h3 class="text-lg font-bold">Latest posts</h3> -->
+      <!--     <a -->
+      <!--       href="/posts" -->
+      <!--       class="text-sm text-secondary-content underline decoration-dashed underline-offset-8" -->
+      <!--       rel="noreferrer" -->
+      <!--       >See all posts -->
+      <!--     </a> -->
+      <!--   </header> -->
+      <!--   <section class="grid grid-cols-1 gap-4 sm:grid-cols-2 mx-auto"> -->
+      <!--     { -->
+      <!--       posts.map((post: any) => ( -->
+      <!--         <PostLinkBox -->
+      <!--           title={post.data.title} -->
+      <!--           publishedAt={post.data.publishedAt.toLocaleDateString("en-us", { -->
+      <!--             year: "numeric", -->
+      <!--             month: "short", -->
+      <!--             day: "numeric", -->
+      <!--           })} -->
+      <!--           description={post.data.description} -->
+      <!--           href={"/posts/" + post.slug} -->
+      <!--         /> -->
+      <!--       )) -->
+      <!--     } -->
+      <!--   </section> -->
+      <!-- </article> -->
     </div>
   </main>
 </Layout>

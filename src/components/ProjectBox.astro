@@ -1,0 +1,88 @@
+---
+interface Props {
+  title: string;
+  publishedAt?: Date;
+  description?: string;
+  url?: string; // Optional external url
+  href?: string; // Optional href
+  repo?: string; // Optional repohref (GitHub link)
+  tags?: string[];
+}
+
+const { title, publishedAt, description, url, href, repo, tags } = Astro.props;
+---
+
+<div
+  class="flex flex-col justify-between gap-2 rounded-md border border-neutral p-4 relative overflow-visible"
+  data-astro-prefetch
+>
+  <div class="flex w-full justify-between gap-3 flex-row items-start">
+    <p class="font-medium tracking-wider">{title}</p>
+    <div class="flex flex-row items-center gap-2">
+      {
+        publishedAt ? (
+          <p class="text-neutral whitespace-nowrap">
+            {new Date(publishedAt).toLocaleDateString("en-us", {
+              year: "numeric",
+              month: "short",
+              day: "numeric",
+            })}
+          </p>
+        ) : null
+      }
+      <div class="flex flex-row items-center gap-2">
+        {
+          repo ? (
+            <a
+              href={repo}
+              target="_blank"
+              data-astro-prefetch
+              class="inline-block transition-transform duration-300 ease-in-out transform hover:-translate-y-1 hover:rotate-12"
+            >
+              <img src="/icons/github.svg" alt="GitHub" class="w-6 h-6" />
+            </a>
+          ) : null
+        }
+
+        {
+          url ? (
+            <a
+              href={href}
+              target="_blank"
+              data-astro-prefetch
+              class="cursor-pointer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke-width="2"
+                stroke="#000000"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                color="#94a0a9"
+                class="tabler-icon tabler-icon-arrow-up-right transition-transform duration-300 ease-in-out hover:translate-y-[-4px] hover:translate-x-[4px]"
+              >
+                <path d="M17 7l-10 10" />
+                <path d="M8 7l9 0l0 9" />
+              </svg>
+            </a>
+          ) : null
+        }
+      </div>
+    </div>
+  </div>
+  {
+    tags ? (
+      <div class="pt-1 flex flex-row flex-wrap gap-2">
+        {tags.map((item) => (
+          <div class="badge badge-neutral ">{item}</div>
+        ))}
+      </div>
+    ) : (
+      <p class="truncate">{description}</p>
+    )
+  }
+</div>

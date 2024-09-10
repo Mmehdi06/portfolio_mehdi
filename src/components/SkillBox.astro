@@ -9,34 +9,38 @@ interface Frameworks {
   [key: string]: Framework;
 }
 
-interface Props{
-    title: string;
-    frameworks: Frameworks;
-    
+interface Props {
+  title: string;
+  frameworks: Frameworks;
 }
 
 const { title, frameworks } = Astro.props;
 ---
 
-<div class="group flex flex-col gap-2 rounded-md border border-neutral p-4 ">
+<div class="group flex flex-col gap-2 rounded-md border border-neutral p-4">
   <div class="flex w-full justify-between gap-3 flex-row items-start">
     <p class="font-medium">{title}</p>
   </div>
 
   <div class="pt-1 flex flex-row flex-wrap gap-2">
-    {Object.keys(frameworks).map((frameworkKey) => {
-      const framework = frameworks[frameworkKey];
-      return (
-        <a href={framework.url} target="_blank" class="justify-center items-center flex-col gap-2 rounded-md border border-neutral p-2 transition-all duration-300 hover:-translate-y-1.5" >
-          
-          <img src={framework.icon} alt={framework.name} height="40" width="40" />
-        </a>
-      );
-    })}
+    {
+      Object.keys(frameworks).map((frameworkKey) => {
+        const framework = frameworks[frameworkKey];
+        return (
+          <a
+            href={framework.url}
+            target="_blank"
+            class="justify-center items-center flex-col gap-2 rounded-md border border-neutral p-2 transition-all duration-300 hover:-translate-y-1.5"
+          >
+            <img
+              src={framework.icon}
+              alt={framework.name}
+              height="40"
+              width="40"
+            />
+          </a>
+        );
+      })
+    }
   </div>
 </div>
-
-
-
-
-

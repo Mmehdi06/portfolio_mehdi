@@ -24,7 +24,7 @@ const currentPath = Astro.url.pathname;
 ---
 
 <!doctype html>
-<html class=" bg-paper-color text-base-content overflow-y-scroll" lang="en">
+<html class="bg-paper-color text-base-content overflow-y-scroll" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -32,7 +32,10 @@ const currentPath = Astro.url.pathname;
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <script defer data-domain="portfolio.mehdi-merkachi.dev" src="https://plausible.mehdi-merkachi.dev/js/script.js"></script>
+    <script
+      defer
+      data-domain="portfolio.mehdi-merkachi.dev"
+      src="https://plausible.mehdi-merkachi.dev/js/script.js"></script>
 
     <link
       rel="preload"
@@ -63,7 +66,7 @@ const currentPath = Astro.url.pathname;
     <meta property="og:type" content={og_type} />
     <meta property="og:image" content={og_image} />
     <meta property="og:url" content={Astro.request.url} />
-  
+
     <ViewTransitions />
   </head>
   <body>
@@ -77,19 +80,21 @@ const currentPath = Astro.url.pathname;
         <nav class="text-sm custom-breadcrumbs">
           <ul>
             <li>
-              <a class={currentPath === "/" ? "text-accent-content" : ""} href="/"
-                >Home</a
+              <a
+                class={currentPath === "/" ? "text-accent-content" : ""}
+                href="/">Home</a
               >
             </li>
             <li>
               <a
-                class={currentPath.startsWith("/posts") ? "text-accent-content" : ""}
+                class={currentPath.startsWith("/posts")
+                  ? "text-accent-content"
+                  : ""}
                 href="/posts">Posts</a
               >
-            </li> 
+            </li>
           </ul>
         </nav>
-
       </header>
       <slot />
     </div>
@@ -118,7 +123,7 @@ const currentPath = Astro.url.pathname;
         font-display: swap;
       }
 
-      :root{
+      :root {
         font-family: "IBM Plex Mono", monospace;
       }
       .custom-breadcrumbs {

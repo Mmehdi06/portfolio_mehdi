@@ -4,8 +4,8 @@ This is the repository for my personal portfolio, which showcases my skills, pro
 
 ## Technology Stack
 
--  **Astro**: A modern front-end framework for faster websites. It allows us to build fast, optimized websites and provides a seamless developer experience.
--  **Fly.io**: An application hosting service that provides secure, scalable hosting for our portfolio.
+- **Astro**: A modern front-end framework for faster websites. It allows us to build fast, optimized websites and provides a seamless developer experience.
+- **Fly.io**: An application hosting service that provides secure, scalable hosting for our portfolio.
 
 ## Getting Started
 
@@ -18,24 +18,26 @@ This project requires Node.js to run. Make sure it's installed on your machine. 
 ### Installation
 
 1. Firstly, clone this repository. Open your terminal and type:
-    ```bash
-    git clone https://github.com/your_username/portfolio.git
-    ```
+   ```bash
+   git clone https://github.com/your_username/portfolio.git
+   ```
 2. Move to the project directory:
-    ```bash
-    cd portfolio
-    ```
+   ```bash
+   cd portfolio
+   ```
 3. Install the dependencies using npm:
-    ```bash
-    npm install
-    ```
+   ```bash
+   npm install
+   ```
 
 ### Run Locally
 
 Start the development server:
+
 ```bash
 npm run dev
 ```
+
 The application is now running at http://localhost:5000.
 
 ## Deployment
@@ -52,11 +54,10 @@ Your Portfolio's deployment is automated using continuous integration. Here's an
 
 See `.github/workflows/fly.yml` for more information on the CI/CD setup.
 
-3. **Fly.io**: After successful build, the built assets are deployed to Fly.io. 
+3. **Fly.io**: After successful build, the built assets are deployed to Fly.io.
 
 You can view the live version of the site [here](https://mehdi-merkachi.dev).
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-

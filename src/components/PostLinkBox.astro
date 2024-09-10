@@ -16,7 +16,7 @@ const { title, publishedAt, description, href, tags } = Astro.props;
   class="group flex cursor-pointer flex-col justify-between gap-2 rounded-md border border-neutral p-4 transition-all duration-300 hover:-translate-y-1.5"
   data-astro-prefetch
 >
-  <div class="flex w-full justify-between gap-3 flex-row items-start">
+  <div class="flex w-full justify-between gap-5 flex-row items-start">
     <p class="font-medium tracking-wider">{title}</p>
     <div class="flex flex-row items-center gap-2">
       {
@@ -36,6 +36,7 @@ const { title, publishedAt, description, href, tags } = Astro.props;
         height="22"
         viewBox="0 0 24 24"
         fill="none"
+        stroke-width="2"
         stroke="#94a0a9"
         stroke-linecap="round"
         stroke-linejoin="round"
@@ -50,7 +51,7 @@ const { title, publishedAt, description, href, tags } = Astro.props;
     tags ? (
       <div class="pt-1 flex flex-row flex-wrap gap-2">
         {tags.map((item) => (
-          <div class="badge badge-neutral hover:badge-accent">{item}</div>
+          <div class="badge badge-neutral ">{item}</div>
         ))}
       </div>
     ) : (

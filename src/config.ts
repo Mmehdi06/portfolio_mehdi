@@ -28,8 +28,9 @@ interface IConfig {
   };
   projects: {
     [name: string]: {
-      url: string;
+      url?: string;
       tags: string[];
+      repo?: string;
     };
   };
   og: {
@@ -182,12 +183,16 @@ export const Config: IConfig = {
   },
   projects: {
     "My Portfolio - This Website": {
-      url: "https://github.com/Mmehdi06/portfolio_mehdi",
+      repo: "https://github.com/Mmehdi06/portfolio_mehdi",
       tags: ["Astro", "TypeScript", "TailwindCSS"],
     },
     "Raycast Extension - Single Focus": {
       url: "https://www.raycast.com/Mmehdi06/single-focus",
       tags: ["Raycast-API", "TSX", "Swift"],
+    },
+    "Sortrr - MacOS Utility App": {
+      repo: "https://github.com/Mmehdi06/sortrr",
+      tags: ["Swift", "SwiftUI", "MacOS"],
     },
   },
   og: {
