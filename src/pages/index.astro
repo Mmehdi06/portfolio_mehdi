@@ -12,15 +12,15 @@ const years = () => {
   return now.getFullYear() - start.getFullYear();
 };
 
-import { getCollection } from "astro:content";
-import PostLinkBox from "@components/PostLinkBox.astro";
+// import { getCollection } from "astro:content";
+// import PostLinkBox from "@components/PostLinkBox.astro";
 
-const posts = (await getCollection("posts")).sort(function (
-  first: any,
-  second: any,
-) {
-  return second.data.publishedAt.getTime() - first.data.publishedAt.getTime();
-});
+// const posts = (await getCollection("posts")).sort(function (
+//   first: any,
+//   second: any,
+// ) {
+//   return second.data.publishedAt.getTime() - first.data.publishedAt.getTime();
+// });
 ---
 
 <Layout>
