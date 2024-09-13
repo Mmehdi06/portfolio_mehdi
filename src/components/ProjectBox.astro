@@ -4,7 +4,6 @@ interface Props {
   publishedAt?: Date;
   description?: string;
   url?: string; // Optional external url
-  href?: string; // Optional href
   repo?: string; // Optional repohref (GitHub link)
   tags?: string[];
 }
@@ -47,7 +46,7 @@ const { title, publishedAt, description, url, href, repo, tags } = Astro.props;
         {
           url ? (
             <a
-              href={href}
+              href={url}
               target="_blank"
               data-astro-prefetch
               class="cursor-pointer"
