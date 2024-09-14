@@ -44,7 +44,7 @@ export const Config: IConfig = {
     job: "FullStack Engineer",
     started: "2022-09-01",
     currentStack: "DevOps",
-    hobby: "Play Football, Snowboard and Travel",
+    hobby: "Playing Football, Snowboarding and Traveling",
     projectLink: "https://github.com/Mmehdi06?tab=repositories",
     resumeUrl: "/resume/Mehdi_Merkachi_Resume.pdf",
   },
