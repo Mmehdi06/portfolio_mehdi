@@ -61,7 +61,7 @@ export const Config: IConfig = {
       //   url: "https://docs.microsoft.com/en-us/dotnet/csharp/",
       // },
       javascript: {
-        name: "Javascript",
+        name: "JavaScript",
         icon: "/icons/javascript.svg",
         url: "https://w3schools.com/js/",
       },
