@@ -42,6 +42,16 @@ If you have experience in web development and are familiar with TypeScript (TSX)
 
 Creating custom extensions allows you to tailor Raycast even further to your specific needs, making it not just a tool you use, but a tool that’s uniquely yours. This extensibility is one of Raycast’s most powerful features, and it’s incredibly rewarding to see your own tools in action, seamlessly integrated into your workflow.
 
+I’m excited to share that I’ve developed an extension called **Single-Focus**. This simple yet effective tool allows you to quit all open applications except for the one currently in focus.
+
+You can find it in the Raycast store using the link below to install it
+
+<div style="display: flex; justify-content: center;">
+    <a title="Install Single-Focus Raycast Extension" href="https://www.raycast.com/Mmehdi06/single-focus">
+        <img src="https://www.raycast.com/Mmehdi06/single-focus/install_button@2x.png?v=1.1" height="80" alt="Install Single-Focus" style="height: 80px;">
+    </a>
+</div>
+
 ## **AI Features and Paid Options**
 
 Raycast also offers a suite of AI-powered features that take the platform to the next level. One of the most notable is the **AI Chat with Presets**. This feature allows you to integrate AI-driven chat capabilities directly into your workflow, complete with customizable presets for different tasks. Whether you need to draft an email, summarize a document, or brainstorm ideas, the AI chat is there to assist, making it a valuable tool for anyone who relies on creative or analytical work.
