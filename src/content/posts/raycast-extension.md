@@ -40,7 +40,7 @@ The store is constantly growing, with new extensions being added regularly. Whet
 
 If you have experience in web development and are familiar with TypeScript (TSX), you’ll find that building your own Raycast extensions is surprisingly straightforward. The platform is designed to be developer-friendly, with comprehensive documentation and an active community that’s always willing to help.
 
-Creating custom extensions allows you to tailor Raycast even further to your specific needs, making it not just a tool you use, but a tool that’s uniquely yours. This extensibility is one of Raycast’s most powerful features, and it’s incredibly rewarding to see your own tools in action, seamlessly integrated into your workflow.
+Creating custom extensions allows you to tailor Raycast even further to your specific needs, making it not just a tool you use, but a tool that’s uniquely yours. This extensibility is one of Raycast’s most powerful features, and it’s incredibly rewarding to see your own tools in action, seamlessly integrated into your workflow and shared across the community.
 
 I’m excited to share that I’ve developed an extension called **Single-Focus**. This simple yet effective tool allows you to quit all open applications except for the one currently in focus.
 
