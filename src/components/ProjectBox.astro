@@ -29,7 +29,7 @@ const { title, publishedAt, description, url, repo, tags } = Astro.props;
           </p>
         ) : null
       }
-      <div class="flex flex-row items-center gap-2">
+      <div class="inline-flex gap-2">
         {
           repo ? (
             <a
@@ -38,7 +38,7 @@ const { title, publishedAt, description, url, repo, tags } = Astro.props;
               data-astro-prefetch
               class="inline-block transition-transform duration-300 ease-in-out transform hover:-translate-y-1 hover:rotate-12"
             >
-              <img src="/icons/github.svg" alt="GitHub" class="w-6 h-6" />
+              <img src="/icons/github.svg" alt="GitHub" class="w-11 h-6" />
             </a>
           ) : null
         }

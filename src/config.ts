@@ -187,6 +187,7 @@ export const Config: IConfig = {
       tags: ["Astro", "TypeScript", "TailwindCSS"],
     },
     "Raycast Extension - Single Focus": {
+      repo: "https://github.com/Mmehdi06/Single-Focus",
       url: "https://www.raycast.com/Mmehdi06/single-focus",
       tags: ["Raycast-API", "TSX", "Swift"],
     },
