@@ -5,9 +5,7 @@ const postCollection = defineCollection({
   schema: ({ image }) =>
     z.object({
       title: z.string(),
-      cover: image().refine((img: any) => img.width >= 1080, {
-        message: "Cover image must be at least 1080 pixels wide!",
-      }),
+      cover: image(),
       description: z.string(),
       publishedAt: z.date().default(() => new Date()),
     }),
